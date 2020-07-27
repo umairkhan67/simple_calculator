@@ -1,38 +1,63 @@
+body{
+  background-image: url("./assets/back.jpg");
+}
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header{
+  width: 100%;
+  color: white;
+  background: transparent;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+.header h1{
+  margin: 0px 0px 50px 0px;
+  padding: 15px 0px;
+  font-family: 'Lobster', cursive;}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.calc-body{
+
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  max-width: 400px;
+  margin: auto; 
+
+}
+
+.result{
+  height: 60px;
+  background-color: white;
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  border:2px solid orange;
+  opacity: 50%;
+
+}
+
+.result p{
+  font-size: 20px;
+  font-weight: 600;
+  font-family: sans-serif;
+  color: black;
+
+}
+
+.buttons{
+  display: block;
+  border-radius: 10px;
+}
+
+.buttons button{
+  margin-top: 2px;
+  width: 25%;
+  height: 40px;
+  font-size: 16px;
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  background-color: black;
+  border-radius: 10px;
+  outline-style: none;
+  border:1px solid orange;
 }
